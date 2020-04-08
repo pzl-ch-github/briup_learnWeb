@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul>li{
+            width: 200px;
+            height: 360px;
+            background-color:greenyellow;
+            margin: 2em;
+            float: left;
+            border: 2px solid pink;
+            border-radius: 5px;
+            background: url('./imgs/a.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        ul>li>img{
+            width: 100%;
+        }
+        ul>li:hover{
+            background-image: url('./imgs/b.jpg');
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+    </ul>
+
+
+</body>
+</html>

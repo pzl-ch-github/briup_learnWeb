@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+    <style>
+        /* 标签选择器 */
+        div{
+            color: gold;
+        }
+        /* id选择器 */
+        #one{
+            font-size: 30px;
+        }
+        /* class选择器 */
+        .first{
+            background-color: hotpink;
+        }
+        /* 并且选择器 */
+        div.first{
+            color: mediumblue;
+            font-size: 40px;
+        }
+        div#one{
+            background-color: mediumblue;
+            font-size: 10px;
+        }
+        /* 或者选择器 */
+        div,.first{
+            color: brown;
+        }
+        /* 层次选择器 */
+        .second > ul > li{
+            color: orangered;
+            
+        }
+        /* 后代选择器 */
+        .second li{
+            border: 2px solid burlywood;
+        }
+    </style>
+
+</head>
+<body>
+    <div>标签选择器</div>
+    <div id="one">并且选择器 id div</div>
+    <div class="first">class div 并且选择器</div>
+    <div class="second">
+        <ul>
+            <li>part1</li>
+            <li>part2</li>
+            <li>part3</li>
+        </ul>
+    </div>
+    <ul id="one">id选择器</ul>
+    <ol class="first">class选择器</ol>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        .first > ul>li:first-child{
+            border: 2px solid red;
+        }
+        .first > ul>li:last-child{
+            border: 2px solid yellow;
+        }       
+        .first > ul>li:nth-child(3){ /*指定 li中的第3个 */
+            border: 2px solid hsl(125, 70%, 48%);
+        }
+
+        ul>li:only-child{
+            border: 4px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>伪类选择器</h1>
+    <div class="first">
+        <ul>
+            <li>第一个孩子</li>
+            <li>--咨询</li>
+            <li>指定选择的第3个孩子</li>
+            <li>推---荐</li>
+            <li>最后一个孩子</li>
+        </ul>
+    </div>
+    <br> <br>
+    <div class="second">
+        <ul>
+            <li>首页</li>
+            <li>--咨询</li>
+            <li>官网---</li>
+            <li>推---荐</li>
+            <li>其他</li>
+        </ul>
+    </div>
+    <div class="third">
+        <ul>
+            <li>ul中唯一 孩子</li>
+        </ul>
+    </div>
+</body>
+</html>
