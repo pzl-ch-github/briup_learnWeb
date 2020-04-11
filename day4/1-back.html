@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>选择器优先级</title>
+  <style>
+    /* 一般情况下，重复样式：后面会覆盖前面的设置 */
+      #first{
+        color: brown;
+      }
+      .outer>div{
+        color: blue !important;
+      }
+      /* 类选择器大于元素选择器 */
+      .outer .two{
+        font-size: 20px;
+      }
+      .outer div{
+        font-size: 40px;
+      }
+    </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="one" id="first">第一个盒子</div>
+    <div class="two">第二个盒子</div>
+  </div>
+</body>
+</html>
+
+<!--
+  优先级 
+    特权：!important
+    Specificity(权重)： （权重叠加）
+      style > id(id选择器) > class(类选择器) > 元素选择器
+
+ -->

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .boxa{
+      height: 100px;
+      background-color: burlywood;
+      position: relative;
+      left: 100px;
+      top: 100px;
+    }
+    .boxb{
+      height: 70px;
+      background-color: cadetblue;
+      /* position: absolute; */
+    }
+  </style>
+</head>
+<body>
+  <div class="boxa"></div>
+  <div class="boxb"></div>
+</body>
+</html>
+
+<!-- 
+  定位布局:
+    position:
+    元素为定位元素，可能使用如下规则：
+      left:
+      right:
+      bottom:
+      top:
+    相对定位：
+      特点：
+        1.相对当前元素所在位置
+        2.当前元素不会脱离文档流
+    绝对定位：
+      特点：
+        1.相对于距离它最近的父定位元素（如果类推没有父定位元素，则相对浏览器视口）
+        2.脱离文档流（不占据默认文档流的空间；块元素的宽度不再为100%）
+    固定定位：
+      position:fixed
+      特点：
+        1.相对于浏览器视口
+        2.脱离文档流（不占据默认文档流的空间，块元素宽带为100%）
+        3.不会随着屏幕的移动移动
+
+ -->

@@ -1,0 +1,54 @@
+
+
+脱离文档流
+默认文档流
+
+
+连接云服务器：ssh
+ssh root@ip
+
+向云服务传输文件：scp
+scp 文件 root@ip
+
+
+service mysql/apache2 status
+
+mysql -uroot -proot
+
+use mysql
+
+show tables
+
+
+unzip *.zip
+
+apt install unzip
+
+
+
+mv 文件 新地址
+
+/etc/profile
+
+select user ,host from user;
+
+update user set host='%' where user='root'
+
+
+
+use mysql
+
+select user,host from user;
+
+show grants for 'briup';
+
+update user set host='%' where user='root'
+
+show tables
+
+
+
+
+
+
+
