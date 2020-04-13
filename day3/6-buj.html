@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动布局</title>
+    <style>
+        .contains{
+            width: 300px;
+            background-color: cyan;
+        }
+        .contains>p{
+            padding: 0;
+            margin: 0;
+            clear: left;
+        }
+        /* 解决浮动元素问题 */
+        .contains::after{
+            content: "";
+            /* display:block 让伪元素等于块元素*/
+            display: block;
+            clear: both;
+        }
+        .contains>div{
+            height: 100px;
+        }
+        .contains>div.one{
+            background-color: blue;
+            width: 150px;
+        }
+        .contains>div.two{
+            background-color: blueviolet;
+            width: 190px;
+        }
+        .contains>div.three{
+            background-color: chartreuse;
+            width: 240px;
+            margin-left: 400px;
+        }
+
+        .products{
+            height: 200px;
+            width: 340px;
+            background-color: darkolivegreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contains">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <p>支撑父元素</p>
+    </div>
+    <div class="products">
+
+    </div>
+
+</body>
+</html>
+
+
+<!-- 
+    默认文档流：平面
+    父块元素的 高度由内容决定
+    浮动布局：float:left
+            1.浮动布局 布置在块元素上，
+            2.脱离文档流，以致同一层次元素占据默认文档流中的位置
+            3.同一层次的浮动元素在一行显示（自动换行）
+            4.浮动元素不再对父元素进行支撑
+ -->
+
+

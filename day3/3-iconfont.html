@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标库的使用</title>
+    <style>
+       @font-face {
+            font-family: 'iconfont';  /* project id 1743458 */
+            src: url('https//:at.alicdn.com/t/font_1743458_0bsczbegnlm7.eot');
+            src: url('https//:at.alicdn.com/t/font_1743458_0bsczbegnlm7.eot?#iefix') format('embedded-opentype'),
+            url('https//:at.alicdn.com/t/font_1743458_0bsczbegnlm7.woff2') format('woff2'),
+            url('https//:at.alicdn.com/t/font_1743458_0bsczbegnlm7.woff') format('woff'),
+            url('https//:at.alicdn.com/t/font_1743458_0bsczbegnlm7.ttf') format('truetype'),
+            url('https//:at.alicdn.com/t/font_1743458_0bsczbegnlm7.svg#iconfont') format('svg');
+        }
+        .iconfont{
+            font-family: 'iconfont';
+            font-size: 27px;
+        }
+        ul>li::before{
+            content: '\e616';
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ol>
+        <li><i class="iconfont">&#xe619;</i></li>
+        <li><i class="iconfont">&#xe619;</i></li>
+        <li><i class="iconfont">&#xe619;</i></li>
+    </ol>
+    <div>
+        <ul>
+            <li class="iconfont"></li>
+            <li class="iconfont"></li>
+            <li class="iconfont"></li>
+        </ul>
+    </div>
+</body>
+</html>

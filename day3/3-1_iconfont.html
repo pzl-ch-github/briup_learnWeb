@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iconfont测试</title>
+    <style>
+        @font-face {
+            font-family: 'iconfont';  /* project id 1743458 */
+            src: url('https://at.alicdn.com/t/font_1743458_0bsczbegnlm7.eot');
+            src: url('https://at.alicdn.com/t/font_1743458_0bsczbegnlm7.eot?#iefix') format('embedded-opentype'),
+            url('https://at.alicdn.com/t/font_1743458_0bsczbegnlm7.woff2') format('woff2'),
+            url('https://at.alicdn.com/t/font_1743458_0bsczbegnlm7.woff') format('woff'),
+            url('https://at.alicdn.com/t/font_1743458_0bsczbegnlm7.ttf') format('truetype'),
+            url('https://at.alicdn.com/t/font_1743458_0bsczbegnlm7.svg#iconfont') format('svg');
+        }
+        .iconfont{
+            font-family: iconfont;
+            font-size: 3em;
+            font-style: normal;
+        }
+        
+        ul>li:hover{
+            color: crimson;
+        }
+        ul>li{
+            list-style: none;
+        }
+        ul>li::before{
+            font-family: 'iconfont';
+            content: "\e616";
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>unicode引用</h1>
+    <div style="font-family: iconfont;font-size: 40px;">&#xe617;</div>
+    <i class="iconfont">&#xe616;</i>
+    <div>
+        <ul>
+            <li><span>JavaEE</span></li>
+            <li><span>WenUi</span></li>
+            <li><span>Big Datesource</span></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体</title>
+    <style>
+        h1{
+            font-size: 16px;
+            /* 字体粗细  100~900 normal默认，bold加粗*/
+            font-weight: normal; 
+            /* 字体族 */
+            font-family: 'Microsoft YaHei','微软雅黑';
+        }
+        h2{
+            font-family: '宋体';
+            text-align: center;
+        }
+        div.one{
+            font-weight: 900;
+        }
+        div.two{
+            font-weight: 100;
+        }
+        .three{
+            background-color: cadetblue;
+            font-size: 26px;
+            /* height: 100px; */
+            line-height: 100px;
+            /* overflow: scroll(hidden); */
+            text-indent: 2em; /*文本缩进*/
+        }
+
+        .btn{
+            border: 2px solid yellowgreen;
+            display: inline-block;
+            border-radius: 5px;
+            padding: .5em .3em;
+        }
+        .btn-large{
+            font-size: 18px;
+            /* padding: 10px 6px; */
+        }
+        .btn-small{
+            font-size: 12px;
+            /* padding: 5px 3px; */
+        }
+        .btn-mini{
+            font-size: 5px;
+        }
+        div.four{
+            /*  */
+            font: bold italic 19px/2em '宋体','微软雅黑';
+        }
+    </style>
+</head>
+<body>
+    <h1>这是标题，控制字体大小 16px，字体为“微软雅黑”</h1>
+    <h2>这是h2标题，字体为 ‘宋体’,剧中</h2>
+    <div class="one">这是第一个盒子,字体粗细为900</div>
+    <div class="two">这是第二个盒子，字体粗细为100</div>
+    <div class="three">这是第三个盒子,字体：26px,这是第三个盒子,字体：26px</div>
+    <div class="four">这是第四个盒子。使用font， 加粗，斜体，大小10px/ ，字体宋体（若无，则为‘微软雅黑’）</div>
+    <div class="btn btn-large">大按钮</div>
+    <div class="btn btn-small">小按钮</div>
+    <div class="btn btn-mini">超小按钮</div>
+
+</body>
+</html>

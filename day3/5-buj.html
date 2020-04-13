@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动布局</title>
+    <style>
+        .contains{
+            width: 400px;
+            background-color: darkorange;
+        }
+        .contains div{
+            height: 100px;
+        }
+        .contains div.one{
+            height: 80px;
+            width: 180px;
+            background-color: darkorchid;
+            float: left;
+        }
+        .contains div.two{
+            height: 95px;
+            width: 200px;
+            background-color:green;
+            float: left;
+        }
+        .contains div.three{
+            height: 115px;
+            width: 340px;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="contains">
+        <div class="one">第一个盒子</div>
+        <div class="two">第二个盒子</div>
+        <div class="three">第三个盒子</div>
+    </div>
+</body>
+</html>
