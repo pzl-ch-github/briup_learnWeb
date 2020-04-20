@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>响应式布局</title>
+  <link rel="stylesheet" href="../day54/wyyx/css_wy/common.css">
+  <style>
+    .videos{
+
+    }
+    .wrapper{
+      width: 1105px;
+      margin: 0 auto;
+    }
+    .videos>.wrapper>ul::after{
+      display: block;
+      content: "";
+      clear: both;
+    }
+    .videos>.wrapper>ul>li{
+      float: left;
+      width: 180px;
+      height: 100px;
+      background-color: blueviolet;
+      margin-right: 5px;
+    }
+    .videos>.wrapper>ul>li:last-child{
+      margin-right: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="videos">
+    <div class="wrapper">
+      <ul>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

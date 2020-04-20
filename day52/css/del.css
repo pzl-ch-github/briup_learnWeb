@@ -1,0 +1,15 @@
+body{
+  font:12px/1.5 "Microsoft Yahei","微软雅黑",verdana;
+  color: #cccccc;
+}
+body,ul,ol,p,h1,h2,h3{
+  margin: 0;
+  padding: 0;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #cccccc;
+}

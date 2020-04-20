@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+}
+ul,ol{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* 包装（页面通用模块） */
+.wrapper{
+  width: 1090px;
+  margin: 0 auto;
+}

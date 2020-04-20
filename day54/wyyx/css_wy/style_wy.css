@@ -1,0 +1,213 @@
+/* 网易严选仿照前言：
+    主页整体分为五个大模块：
+      一.导航栏（及滚动图）
+        1）顶部导航栏
+        2）搜索栏
+        3）滚动商品栏
+      二.商品展示栏
+        逐个商品模块
+        1）
+        2）
+      三.底部信息栏
+        1）
+        2）
+      四.左右固定栏
+        1）
+        2）
+      五.其他模块
+        1）首次进入页面的弹出框
+        2）
+
+*/
+
+/* 导航栏（及滚动图）：两个导航栏/一个滚动图 */
+
+/* 顶部导航栏 */
+.firstbox{
+  height: 176px;
+  background-color: aquamarine;
+}
+.firstbox .one{
+  height: 36px;
+  background-color: #000000;
+}
+.one .appbar_first::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.one .appbar_first>ul{
+  float: right;
+}
+.one .appbar_first>ul>li{
+  float: left;
+  /* text-align: center; */
+  line-height: 36px;
+  margin-left: 1em;
+  position: relative;
+}
+.one .appbar_first>ul>li:not(:first-child)::before{
+  content: "";
+  display: inline-block; 
+  height: 15px;
+  border-left: 1px solid #999999;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.one .appbar_first>ul>li>a:hover{
+  color: #ffffff;
+}
+.one .appbar_first a{
+  color: #cccccc;
+  font-size: 12.8px;
+}
+.one .appbar_first>ul>li .company{
+  position: absolute;
+  top: 36px;
+  /* width: 70px; */
+  border: 1px solid #ccc;
+  display: none;
+}
+.one .appbar_first>ul>li .company>li{
+  height: 36px;
+  width: 80px;
+  float: left;
+  line-height: 36px;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+}
+.one .appbar_first>ul>li:nth-child(5):hover .company,
+.one .appbar_first>ul>li:nth-child(6):hover .company,
+.one .appbar_first>ul>li:nth-child(7):hover .app_img{
+  display: block;
+}
+.one .appbar_first .app_img{
+  position: absolute;
+  top: 36px;
+  left: -20px;
+  content: "";
+  display: block;
+  clear: both;
+  width: 130px;
+  height: 160px;
+  border: 1px solid #cccccc;
+  font-size: 12.8px;
+  /* text-align: center; */
+  margin: 0 auto;
+  color: #cc9756;
+  display: none;
+}
+.one .appbar_first .app_img>li{
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  /* width: 130px; */
+}
+.one .appbar_first .app_img>li:nth-child(2){
+  margin-top: -15px;
+  margin-left: 7px;
+  /* text-align: center; */
+}
+/* /顶部导航栏 */
+
+/* 二级导航栏（包含搜索框） */
+.firstbox .two{
+  /* height: 140px; */
+  background-color: #ffffff;
+}
+.two .appbar_second ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.two .appbar_second>ul>li{
+  float: left;
+}
+.two .appbar_second>ul>li:first-child{
+  width: 362px;
+  height: 104px;
+}
+    /* 搜索栏 */
+.two .appbar_second>ul>li:nth-child(2){
+  width: 584px;
+  height: 104px;
+}
+
+
+.two .appbar_second>ul>li:nth-child(3){
+  width: 144px;
+  height: 104px;
+  font-size: 14px;
+}
+.two .appbar_second>ul>li:nth-child(3)>div{
+  /* width: 50%; */
+  float: right;
+  height:25px;
+  width: 100px;
+  padding: 4px 2px;
+  border:1px solid #cc9756;
+  border-radius: 29px;
+  cursor: pointer;
+  margin-top: 37px;
+}
+/* .two .appbar_second>ul>li:nth-child(3)>div::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.two .appbar_second>ul>li:nth-child(3)>div>div{
+  float: left;
+} */
+.two .appbar_second>ul>li:nth-child(3)>div:hover{
+  background-color: #f5f3ef;
+}
+.two .appbar_second>ul>li:nth-child(3) .shop{
+  display: inline-block;
+  width: 18px;
+  height:18px;
+  background: url(../pic_wy/pics.png);
+  background-position: 0 -148px;
+}
+.two .appbar_second>ul>li:nth-child(3) .shopnum{
+  display: inline-block;
+  width: 19px;
+  height:19px;
+  background: url(../pic_wy/pics.png);
+  background-position: 0 -51px;
+}
+.two .appbar_second>ul>li:last-child{
+  height: 36px;
+  width: 1090px;
+}
+
+
+.two .appbar_second>ul>li:last-child{
+  height: 36px;
+  width: 1090px;
+}
+.two .appbar_second>ul>li:last-child ul{
+  margin-top: 10px;
+}
+.two .appbar_second>ul>li:last-child ul>li{
+  float: left;
+  line-height: 28px;
+  /* margin-bottom: 2px; */
+  border-bottom: 4px solid #cc9756;
+  margin-right: 48px;
+}
+.two .appbar_second>ul>li:last-child ul>li a{
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+/* /二级导航栏（包含搜索框） */
+
+
+/* /导航栏（及滚动图）：两个导航栏/一个滚动图 */
+
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格单元格合并</title>
+  <style>
+    table{
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    td{
+      border: 1px solid #cccccc;
+    }
+    tbody{
+      text-align: center;
+    }
+    .container table:nth-child(2) tr td{
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- <iframe src="" frameborder="0"></iframe> -->
+    <iframe style="height: 30px;"  frameborder="0" scrolling="no" hspace="0"  src="http://i.tianqi.com/index.php?c=code&a=getcode&id=34&h=25&w=280"></iframe>
+    <table>
+      <tbody>
+        <tr>
+          <td rowspan="2">摘要</td>
+          <td colspan="3">原值</td>
+          <!-- <td></td>
+          <td></td> -->
+        </tr>
+        <tr>
+          <!-- <td></td> -->
+          <td>借方</td>
+          <td>贷方</td>
+          <td>净值</td>
+        </tr>
+        <tr>
+          <td>摘要内容</td>
+          <td>借方原值</td>
+          <td>贷方原值</td>
+          <td>净值原值</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+    <table style="margin-top: 50px;">
+      <!-- <caption>表头</caption> -->
+      <tbody>
+        <tr>
+          <td colspan="4">一、项目基本情况</td>
+        </tr>
+        <tr>
+          <td>项目名称：</td>
+          <td></td>
+          <td>审核人：</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>制作人：</td>
+          <td></td>
+          <td>制作日期：</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>项目经理：</td>
+          <td></td>
+          <td>项目日期：</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

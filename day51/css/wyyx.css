@@ -1,0 +1,42 @@
+
+/* 导航栏模块：一级导航栏/二级导航栏 */
+/* .first_box{
+  background-color: black;
+} */
+
+.first_appbar{
+  background-color: black;
+}
+.first_appbar .wrapper{
+  height: 36px;
+  content: "";
+  display: block;
+  clear: both;
+}
+.first_appbar ul {
+  float:right;
+}
+.first_appbar ul li{
+  line-height: 36px;
+  float: left;
+  margin-left: 11px;
+}
+.first_appbar ul li:not(:first-child)::before{
+  /* border-left: 1px solid #ffffff; */
+  content: "";
+  display: inline-block; 
+  height: 16px;
+  border-left: 1px solid #999999;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+.first_appbar ul li:nth-child(5){
+  
+}
+
+
+/* /导航栏模块：一级导航栏/二级导航栏 */
+
+
+
+

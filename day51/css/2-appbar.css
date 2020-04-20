@@ -1,0 +1,36 @@
+.first{
+  height: 40px;
+  background-color: black;
+}
+
+.second .sedbar{
+  margin-top: 20px;
+}
+.second .one ul li{
+  /* width: 212px;
+  height: 60px;
+  background: url('../imgs/pics.png');
+  background-position: 0 -298px; */
+}
+
+.second .one ul li:first-child a{
+  display: inline-block;
+  width: 212px;
+  height: 60px;
+  background: url('../imgs/pics.png');
+  background-position: 0 -298px;
+}  
+.second .one ul li:last-child{
+  float: right;
+}
+.sedbar .one ul li:last-child a{
+
+}
+.sedbar .one ul li:last-child .iconShopcar{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../imgs/pics.png);
+  background-position: 0 -148px;
+}
+

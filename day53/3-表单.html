@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form表单</title>
+  <script>
+    //1.原生  js -> 调用bom（浏览器） -> 委托浏览器向后台发请求（HTTP协议）
+    /*
+      请求报文
+      请求行 GET / login
+      请求头
+        代理
+        编码格式
+        cookie
+        token
+        ...
+      请求体【post】
+        参数
+    */
+    window.onload - function(){
+      let loginForm = document.getElementById();
+      loginForm.onsubmit = function(even){
+        //异步提交
+        let xhr = new XMLHttpRequest();
+        xhr.open();
+        //json
+        xhr.setRequestHeader()
+        xhr.send();
+        event.preventDefault();
+        
+      }
+
+    }
+
+    //2.框架 jquery 基于回调函数的ajax
+
+    //3.框架 axios  基于promise
+
+
+  </script>
+</head>
+<body>
+  <div class="container">
+    <form action="https://www.baidu.com">
+      用户名<input type="text"><br>
+      密码<input type="text"><br>
+      <input type="submit" value="登录">
+    </form>
+  </div>
+</body>
+</html>
